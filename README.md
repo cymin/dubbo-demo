@@ -8,7 +8,7 @@
 3. 接口
 demo-provider和demo-consumer相同的地方是service层有一套一模一样的接口，但是接口实现类只在demo-provider中，并且同一个接口可以有不同的实现。
 4. 打jar包
-demo-provider可能需要打成jar包执行在多个机器上面，打包过程有2步：配置pom -> 在IDEA执行package命令 。具体步骤在/home/cymin/chen-linux/notes/dubbo整合zookeeper的使用.docx中。
+demo-provider可能需要打成jar包执行在多个机器上面，打包过程有2步：配置pom -> 在IDEA执行package命令 。具体步骤在~/chen-linux/notes/dubbo整合zookeeper的使用.docx中。
 5. Dubbo、zookeeper关系调用
 
 6. 访问dubbo-admin
