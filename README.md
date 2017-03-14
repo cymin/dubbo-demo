@@ -1,10 +1,13 @@
 # dubbo-demo
 ## 总结
 1. 运行顺序
-先启动demo-provider中的Application, 后启动demo-consumer中的Application。
+先启动demo-provider中的[Application.java], 后启动demo-consumer中的Application。
 2. 启动demo-provider中如若遇到端口占用问题,执行以下操作：<br>
-`ss -tnlp | grep 20880  #得到pid`<br>
-`Kill -9 pid  #杀死该进程`
+
+```shell
+ss -tnlp | grep 20880  #得到pid
+Kill -9 pid  #杀死该进程`
+```
 3. 接口
 demo-provider和demo-consumer相同的地方是service层有一套一模一样的接口，但是接口实现类只在demo-provider中，并且同一个接口可以有不同的实现。
 4. 打jar包
